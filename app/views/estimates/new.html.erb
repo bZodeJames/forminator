@@ -1,0 +1,24 @@
+<%= form_for @estimate, url: create_estimates_url do |f| %>
+    <%= notice %>
+  <%= @estimate.errors.full_messages.join(', ') %>
+  <%= f.text_field :first_name, placeholder: "First Name" %>
+  <%= f.text_field :last_name, placeholder: "Last Name" %>
+  <%= f.text_field :email, placeholder: "Email" %>
+  <%= f.text_field :phone, placeholder: "Phone Number" %>
+  <%= f.text_field :contact_time, placeholder: "Best time to contact" %>
+  <%= f.text_field :house_number, placeholder: "House Number" %>
+  <%= f.text_field :street_name, placeholder: "Street Name" %>
+  <%= f.text_field :address_two, placeholder: "Address Line 2" %>
+  <%= f.text_field :city, placeholder: "City" %>
+  <%= f.text_field :state, placeholder: "State" %>
+  <%= f.number_field :zip_code, placeholder: "Zip Code" %>
+  <%= f.number_field :square_feet, placeholder: "Sqaure Feet" %>
+  <%= f.number_field :bedrooms, placeholder:  "Number of Bedrooms" %>
+  <%= f.number_field :bathrooms, placeholder: "Number of Bathrooms" %>
+  <%= f.number_field :year_built, placeholder: "Year Built" %>
+  <%= f.text_field :property_type, placeholder: "Property Type" %>
+  <%= f.text_field :features, placeholder: "Features" %>
+  <%= f.text_field :comments, placeholder: "Additional Comments" %>
+  <%= f.submit %>
+<% end %>
+
