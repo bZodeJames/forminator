@@ -39,3 +39,7 @@ en:
   estimate_mailer:
     estimate_new: 
       subject: "A new estimate request has been submitted"
+  
+  request_mailer:
+    request_new:
+      subject: "A new music request has been submitted"

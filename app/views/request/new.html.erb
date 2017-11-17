@@ -1,0 +1,16 @@
+<%= form_for @request, url: create_request_url do |f| %>
+  <%= notice %>
+  <%= @request.errors.full_messages.join(', ') %>
+
+  <%= f.text_field :name, placeholder: 'Name' %>
+  <%= f.email_field :email, placeholder: 'Email' %>
+  <%= f.text_field :phone, placeholder: 'Phone Number' %>
+  <%= f.text_field :address, placeholder: 'Address' %>
+  <%= f.text_field :city, placeholder: 'City' %>
+  <%= f.text_field :state, placeholder: 'State' %>
+  <%= f.text_field :zip_code, placeholder: 'Zip Code' %>
+  <%= f.text_field :music_choice, placeholder: 'Music Choice' %>
+  <%= f.text_field :shipping_type, placeholder: 'Shipping Type' %>
+  <%= f.text_area :message, placeholder: 'Message' %>
+  <%= f.submit 'Send' %>
+<% end %>

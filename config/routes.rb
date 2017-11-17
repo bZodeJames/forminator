@@ -6,4 +6,7 @@ Rails.application.routes.draw do
   get 'estimate', to: 'estimates#new', as: 'new_estimates'
   post 'estimate', to: 'estimates#create', as: 'create_estimates'
   
+  get 'request', to: 'request#new', as: 'new_request'
+  post 'request', to: 'request#create', as: 'create_request'
+  
 end
